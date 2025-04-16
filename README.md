@@ -12,15 +12,15 @@ Leia o enunciado completo no Canvas.
 
 ## Informações Gerais
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Eric Gomes Cordeiro
+- Matricula: 1230510
+- Proposta de projeto escolhida: Catalogos de Filmes
 - Breve descrição sobre seu projeto:
 
 ## Print da versão responsiva com CSS puro
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<Captura de tela 2025-04-16 174651.png>)
 
 ## Print da versão responsiva com Bootstrap
 
-<<  COLOQUE A IMAGEM AQUI >>
+![alt text](<Captura de tela 2025-04-16 174427.png>)

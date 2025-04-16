@@ -1,13 +1,252 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
+    <title>GS GEEK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <!-- Adicionando o link do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
+
 <body>
-    <h1>Olá mundo</h1>
+
+    <!-- Cabeçalho -->
+    <header class="text-center py-3">
+        <div class="container">
+            <!-- Imagem do cabeçalho ajustada para ser menor -->
+            <img class="Logo img-fluid" src="imgss/Cs (2).png" alt="Logotipo" style="max-width: 100px; height: auto;">
+            <h1 class="my-3">GS GEEK</h1>
+            <!-- Outra imagem do cabeçalho ajustada -->
+            <img class="Logo img-fluid" src="imgss/Cs (2).png" alt="Logotipo" style="max-width: 100px; height: auto;">
+        </div>
+    </header>
+
+    <!-- Navegação lateral (Categorias) - agora acima do conteúdo principal -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="isekai.html">Isekai</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="shounen.html">Shounen</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="seinin.html">Seinen</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo com os filmes -->
+    <main class="container">
+        <div class="row" id="catalogo">
+            <!-- Cards gerados dinamicamente vão aparecer aqui -->
+          </div>
+          
+        <!-- Pesquisa -->
+        <section class="mb-4">
+            <input class="pesquisa form-control" type="text" placeholder="Pesquisar...">
+        </section>
+
+        <h1 class="destaque text-center my-5">EM DESTAQUE</h1>
+
+        <div class="row mb-4">
+            <!-- Imagem Principal (Maior que as outras) - Aumentei ainda mais a imagem de "Solo" -->
+            <div class="col-12 col-md-12 col-lg-10 mb-4">
+                <a href="solo.html"> <img class="principal img-fluid w-100" src="imgss/slde.png" alt="Solo"></a>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- Filmes em destaque menores -->
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="op.html"><img class="img-fluid" src="imgss/op.jpg" alt="op"></a>
+                <p class="text-center">One Piece</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="jujutsu.html"><img class="img-fluid" src="imgss/jujutsu.jpg" alt="jujutsu"></a>
+                <p class="text-center">Jujutsu Kaisen</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="attk.html"><img class="img-fluid" src="imgss/attk.webp" alt="attk"></a>
+                <p class="text-center">Ataque on Titan</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="jojo.html"><img class="img-fluid" src="imgss/jojo.jpg" alt="jojo"></a>
+                <p class="text-center">Jojo Bizarre</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="damon.html"><img class="img-fluid" src="imgss/damon.webp" alt="damon"></a>
+                <p class="text-center">Damon Slayer</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="hxh.html"><img class="img-fluid" src="imgss/Hunter_×_Hunter_(2011).png" alt="Hunter_×_Hunter_"></a>
+                <p class="text-center">Hunter x Hunter</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="naruto.html"><img class="img-fluid" src="imgss/naruto.jpg" alt="naruto"></a>
+                <p class="text-center">Naruto</p>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-4 mb-4">
+                <a href="myh.html"><img class="img-fluid" src="imgss/myh.jpg" alt="myh"></a>
+                <p class="text-center">My Hero Academia</p>
+            </div>
+        </div>
+
+        
+        
+    </main>
+    
+
+    <!-- Rodapé -->
+    <footer class="box text-center py-3 bg-dark text-white">
+        <h3>CS GEEK</h3>
+        <ul class="menu">
+            <a href="index.html">
+                <li class="text-white">HOME</li>
+            </a>
+        </ul>
+
+        <ul class="menu">
+            <a href="redes.html">
+                <li class="text-white">REDES SOCIAIS</li>
+            </a>
+        </ul>
+
+        <ul class="menu">
+            <a href="sobre.html">
+                <li class="text-white">SOBRE NOS</li>
+            </a>
+        </ul>
+    </footer>
+
+    <!-- Scripts do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        const filmes = [
+  {
+    "id": 1,
+    "titulo": "One Piece",
+    "descricao": "Aventura dos Chapéus de Palha em busca do One Piece.",
+    "conteudo": "One Piece é um anime clássico com piratas, poderes e amizades.",
+    "categoria": "Shounen",
+    "autor": "Eiichiro Oda",
+    "data": "1999-10-20",
+    "imagem": "imgss/op.jpg",
+    "link": "op.html"
+  },
+  {
+    "id": 2,
+    "titulo": "Jujutsu Kaisen",
+    "descricao": "Feiticeiros enfrentam maldições poderosas.",
+    "conteudo": "Itadori Yuji entra no mundo das maldições e feitiçaria.",
+    "categoria": "Shounen",
+    "autor": "Gege Akutami",
+    "data": "2020-10-02",
+    "imagem": "imgss/jujutsu.jpg",
+    "link": "jujutsu.html"
+  },
+  {
+    "id": 3,
+    "titulo": "Ataque on Titan",
+    "descricao": "A humanidade luta contra titãs gigantes.",
+    "conteudo": "Eren e seus amigos enfrentam verdades chocantes sobre seu mundo.",
+    "categoria": "Seinen",
+    "autor": "Hajime Isayama",
+    "data": "2013-04-06",
+    "imagem": "imgss/attk.webp",
+    "link": "attk.html"
+  },
+  {
+    "id": 4,
+    "titulo": "Jojo Bizarre",
+    "descricao": "A lendária saga da família Joestar.",
+    "conteudo": "Cada geração da família Joestar enfrenta ameaças sobrenaturais.",
+    "categoria": "Aventura",
+    "autor": "Hirohiko Araki",
+    "data": "1987-01-01",
+    "imagem": "imgss/jojo.jpg",
+    "link": "jojo.html"
+  },
+  {
+    "id": 5,
+    "titulo": "Damon Slayer",
+    "descricao": "Tanjiro enfrenta demônios para salvar sua irmã.",
+    "conteudo": "Demon Slayer é um anime com visual impressionante e muita ação.",
+    "categoria": "Shounen",
+    "autor": "Koyoharu Gotouge",
+    "data": "2019-04-06",
+    "imagem": "imgss/damon.webp",
+    "link": "damon.html"
+  },
+  {
+    "id": 6,
+    "titulo": "Hunter x Hunter",
+    "descricao": "Gon parte em uma jornada para encontrar seu pai.",
+    "conteudo": "Um clássico da ação e estratégia no mundo dos caçadores.",
+    "categoria": "Shounen",
+    "autor": "Yoshihiro Togashi",
+    "data": "2011-10-02",
+    "imagem": "imgss/Hunter_×_Hunter_(2011).png",
+    "link": "hxh.html"
+  },
+  {
+    "id": 7,
+    "titulo": "Naruto",
+    "descricao": "Ninja determinado quer ser Hokage.",
+    "conteudo": "Naruto Uzumaki vive uma jornada de superação, amizade e batalhas épicas.",
+    "categoria": "Shounen",
+    "autor": "Masashi Kishimoto",
+    "data": "2002-10-03",
+    "imagem": "imgss/naruto.jpg",
+    "link": "naruto.html"
+  },
+  {
+    "id": 8,
+    "titulo": "My Hero Academia",
+    "descricao": "Jovens heróis treinam para salvar o mundo.",
+    "conteudo": "Izuku Midoriya sonha em se tornar o herói número 1.",
+    "categoria": "Shounen",
+    "autor": "Kohei Horikoshi",
+    "data": "2016-04-03",
+    "imagem": "imgss/myh.jpg",
+    "link": "myh.html"
+  }
+];
+
+        filmes.forEach(filme => {
+          const card = document.createElement('div');
+          card.className = 'col-12 col-md-6 col-lg-4 mb-4';
+      
+          card.innerHTML = `
+            <a href="${filme.link}">
+              <img class="img-fluid" src="${filme.imagem}" alt="${filme.titulo}">
+            </a>
+            <p class="text-center">${filme.titulo}</p>
+          `;
+      
+          document.getElementById('catalogo').appendChild(card);
+        });
+      </script>
+      
 </body>
+
 </html>
+
